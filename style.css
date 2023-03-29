@@ -57,7 +57,8 @@ body{
 .right_text {
     width: 40%;
 }
-.left_text h3,p {
+.left_text h3,
+.left_text p {
     color: white;
 }
 .left_text h3 {
