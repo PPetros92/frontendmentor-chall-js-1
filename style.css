@@ -1,0 +1,138 @@
+/*
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700
+*/
+:root {
+    --red:hsl(0, 100%, 74%) ;
+    --green:hsl(154, 59%, 51%);
+
+    --blue: hsl(248, 32%, 49%);
+    --darkBlue: hsl(249, 10%, 26%); 
+    --grayishBlue: hsl(246, 25%, 77%);
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(img/bg-intro-desktop.png);
+    background-color: var(--red);
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container_flex{
+    display: flex;
+    margin-top: 5em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left_text,
+.right_text {
+    width: 40%;
+}
+.left_text h3,p {
+    color: white;
+}
+.left_text h3 {
+    font-size: 2em;
+    padding-right: 25%;
+}
+.btn_free_trial{
+    background-color: var(--blue);
+    margin-bottom: 1em;
+    text-align: center;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    box-shadow: 0px 9px 3px -5px rgba(0, 0, 255, 0.366);
+}
+.btn_free_trial a{
+    text-decoration: none;
+    color: white;
+}
+.white_space {
+    background-color: white;
+    padding: 1em 1.5em;
+    border-radius: 5px;
+}
+.form_flex{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+input{
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border: 1px solid #ccc;
+}
+input:focus{
+    border: 1px solid #555;
+}
+input:last-of-type{
+    background-color: var(--green);
+    color: white;
+    text-transform: uppercase;
+    
+}
+.white_space p{
+    text-align: center;
+    font-size: 0.7rem;
+    opacity: 0.5;
+}
+.white_space a{
+    text-decoration: none;
+}
+.white_space a:hover{
+    opacity: 1;
+}
+.terms_color {
+    color: red;
+}
+
+
+/*Media queries*/
+
+@media screen and (max-width:700px) {
+    .container_flex{
+        flex-direction: column;
+    }
+    .left_text,
+    .right_text {
+        width: 80%;
+    }
+
+    .left_text h3,p {
+        text-align: center;
+    }
+}
