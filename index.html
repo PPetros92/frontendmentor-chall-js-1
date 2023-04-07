@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
     <title>Document</title> 
 </head>
 <body>
@@ -29,22 +30,40 @@
             </div>
 
             <div class="white_space">
-                <form action="" class="form_flex">
-                    <label for="FirstName"></label>
-                    <input type="text" name="firstname" id="FirstName" placeholder="First name">
-    
-                    <label for="LastName"></label>
-                    <input type="text" name="LastName" id="LastName" placeholder="Last name">
-                    <label for="email"></label>
-                    <input type="email" name="email" id="email" placeholder="Email Address">
-                    <label for="password"></label>
-                    <input type="password" name="password" id="password" placeholder="PassWord">
-
-                    <input type="submit" value="claim your free trial"> 
+                <form action="" class="form_flex" id="form">
+                    <!-- firstname  -->
+                    <div class="input-control">
+                        <label for="firstName"></label>
+                        <input type="text" name="firstname" id="firstName" placeholder="First name">
+                        <div class="error"></div>
+                    </div>
+                    <!-- lastname  -->
+                    <div class="input-control">
+                        <label for="lastName"></label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Last name">
+                        <div class="error"></div>
+                    </div>
+                    <!-- email  -->
+                    <div class="input-control">
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="Email Address">
+                        <div class="error"></div>
+                    </div>
+                    <!-- password  -->
+                    <div class="input-control">
+                        <label for="password"></label>
+                        <input type="password" name="password" id="password" placeholder="PassWord">
+                        <div class="error"></div>
+                    </div>
+                    <!-- submit button  -->
+                    <div id="error"><h1></h1></div>
+                    <input type="submit" value="claim your free trial" class="green">
+                    <!-- <button type="submit">claim your free trial</button>  -->
                 </form>
+                <div class="error"></div>
      
             
-                <!-- <input type="submit" value="claim your free trial">  -->
+
             
                 <p>
                     By clicking the button, you are agreeing to our <a href="#"><span class="terms_color">Terms and Services</span></a>.
@@ -53,6 +72,8 @@
         </div>
         
     </div>
+
+
      
 
 
