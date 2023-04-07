@@ -33,6 +33,7 @@
 :root {
     --red:hsl(0, 100%, 74%) ;
     --green:hsl(154, 59%, 51%);
+    
 
     --blue: hsl(248, 32%, 49%);
     --darkBlue: hsl(249, 10%, 26%); 
@@ -61,6 +62,9 @@ body{
 .left_text p {
     color: white;
 }
+/* .left_text p {
+    color: white;
+} */
 .left_text h3 {
     font-size: 2em;
     padding-right: 25%;
@@ -87,8 +91,8 @@ body{
     flex-direction: column;
     background-color: white;
 }
-
-input{
+input {
+    border: none;
     margin-bottom: 1em;
     padding: 0.5em 1em;
     border-radius: 5px;
@@ -96,15 +100,31 @@ input{
     transition: 0.5s;
     outline: none;
     border: 1px solid #ccc;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 1em;
 }
-input:focus{
+/* .input-control{
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border: 1px solid #ccc;
+} */
+.input-control:focus{
     border: 1px solid #555;
 }
-input:last-of-type{
+.green{
     background-color: var(--green);
     color: white;
     text-transform: uppercase;
-    
+}
+.green:hover{
+    cursor: pointer;
+    /* background: hsla(154, 59%, 51%, 0.76); */
+    background: hsla(154, 59%, 51%, 0.77);
 }
 .white_space p{
     text-align: center;
