@@ -110,7 +110,8 @@ input {
         width: 80%;
     }
 
-    .left_text h3,p {
+    .left_text h3,
+    p {
         text-align: center;
         padding-right:0;
     }
