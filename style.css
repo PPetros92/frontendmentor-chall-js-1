@@ -50,6 +50,7 @@ body{
     background-color: white;
     padding: 1em 1.5em;
     border-radius: 5px;
+    border-bottom:2em;
 }
 .form_flex{
     display: flex;
